@@ -15,3 +15,10 @@ The project demonstrates dynamic page rendering using JavaScript modules — no 
 ---
 
 ## 🧩 Project Structure
+
+## 🧑‍💻 Author
+**may**  
+_All this shit maded by may._
+
+## 🪪 License
+This project is open-source and free to use for educational purposes.
