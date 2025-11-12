@@ -1,5 +1,135 @@
-body{
-    background-color: rgb(28, 228, 228);
-    margin: 0;
-    padding: 0;
+/* === General Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #faf7f2;
+  color: #2d2d2d;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* === Navigation === */
+header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+nav button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+  color: #e67e22;
+  transform: scale(1.1);
+}
+
+/* === Home Page === */
+#content {
+  max-width: 900px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+#content img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+#content p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === Menu Page === */
+.menuSide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden; /* برای اینکه نوار قیمت از محدوده بیرون نزنه */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-top: 1rem;
+}
+
+.item h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+.item p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0.5rem 1rem 1.5rem;
+  text-align: center;
+}
+
+.item span {
+  width: 100%;
+  background-color: #e67e22;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
 }
