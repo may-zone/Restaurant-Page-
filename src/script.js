@@ -1,4 +1,6 @@
 import "./style.css";
+import resImg from "./images/res.jpg";
+
 
 alert("salam ziba !");
 
@@ -20,7 +22,7 @@ document.body.appendChild(content);
 const contentDiv = document.getElementById('content');
 
 const contentImg = document.createElement('img');
-contentImg.src = "./images/res.jpg";
+contentImg.src = resImg;
 contentImg.alt = "Restaurant image of benjamin cheng in unsplash.com";
 contentDiv.appendChild(contentImg);
 
