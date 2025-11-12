@@ -12,9 +12,21 @@ The project demonstrates dynamic page rendering using JavaScript modules — no 
 - ⚙️ **Webpack bundling** for JS, CSS, and images
 - 🔥 **Live reloading** during development with Webpack Dev Server
 
+
 ---
 
 ## 🧩 Project Structure
+📦 restaurant-website
+├── dist/
+├── src/
+│ ├── images/
+│ ├── modules/
+│ ├── style.css
+│ └── script.js
+├── package.json
+├── webpack.config.js
+└── README.md
+---
 
 ## 🧑‍💻 Author
 **may**  
