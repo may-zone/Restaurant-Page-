@@ -1,6 +1,7 @@
 import "./style.css";
 import { homePage } from "./homePage.js";
 import { loadMenu } from "./menu.js";
+import { loadAbout } from "./about.js";
 
 
 alert("salam ziba !");
@@ -21,6 +22,8 @@ document.body.appendChild(content);
 homePage();
 
 document.getElementById('menu').addEventListener('click',loadMenu);
-document.getElementById('home').addEventListener('click',homePage)
+document.getElementById('home').addEventListener('click',homePage);
+document.getElementById('about').addEventListener('click',loadAbout);
+
 
 
