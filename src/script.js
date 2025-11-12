@@ -26,3 +26,7 @@ contentImg.src = resImg;
 contentImg.alt = "Restaurant image of benjamin cheng in unsplash.com";
 contentDiv.appendChild(contentImg);
 
+const imgBullshits = document.createElement('p');
+imgBullshits.textContent = "here is some data about restaurant ";
+content.appendChild(imgBullshits);
+
