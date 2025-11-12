@@ -12,3 +12,7 @@ header.innerHTML = `
 
 `
 document.body.prepend(header);
+
+const content = document.createElement('div');
+content.id='content';
+document.body.appendChild(content);
